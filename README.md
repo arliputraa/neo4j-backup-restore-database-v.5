@@ -12,7 +12,7 @@ Syntax:
 
     ./neo4j-admin database dump arlidev --to-path=/home/ddi/neo4j-enterprise-5.3.0/backups
 
-#### output: 
+#### Output: 
     /home/ddi/neo4j-enterprise-5.3.0/backups/arlidev.dump
 
 ## Restore database.dump
@@ -33,10 +33,21 @@ Syntax:
 
     ./neo4j-admin database backup --to-path=/home/ddi/neo4j-enterprise-5.3.0/backups sosmed
 
-## Restore Online Database 
+#### Output: 
+    /home/ddi/neo4j-enterprise-5.3.0/backups/sosmed-2023-01-18T04-12-17.backup
+
+## Restore Online Database
+#### Step 1
+
 Syntax:
 
     ./neo4j-admin database restore --from-path=/home/ddi/neo4j-enterprise-5.3.0/backups/sosmed-2023-01-18T04-12-17.backup --overwrite-destination sosmed2
 
+#### Step 2
+create database sosmed2 in neo4j browser
+
+Syntax:
+
+    create database sosmed2
 
 
