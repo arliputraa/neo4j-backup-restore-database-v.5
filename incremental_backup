@@ -1,0 +1,6 @@
+INCREMENTAL BACKUP
+
+Run subsequent backup on the same database
+        
+
+./neo4j-admin backup --backup-dir=/mnt/neo4j/backups --database=initialdata
